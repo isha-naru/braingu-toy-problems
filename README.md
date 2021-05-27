@@ -1,6 +1,6 @@
 # braingu-toy-problems
 
-Brain teasers for BrainGu geniuses. Uses Jest test runner(https://jestjs.io/)
+Brain teasers for BrainGu geniuses. Uses Jest test runner (https://jestjs.io/) and pytest (https://docs.pytest.org/en/)
 
 ## Get started
 
