@@ -4,7 +4,6 @@
 
 function calculator(str) {
   return eval(str);
-  return str;
 }
 
 module.exports = calculator;
