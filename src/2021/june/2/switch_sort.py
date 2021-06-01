@@ -3,5 +3,24 @@
 # The array arr will at most contain five elements and will contain at least two elements.
 
 def switch_sort(str):
-  # code goes here
-  return str
+  n = len(str)
+  arr = [*enumerate(str)]
+  arr.sort(key = lambda it: it[1])
+  vis = {k:False for k in range(n)}
+  ans = 0
+  for i in range(n):
+    if vis[i] or arr[i][0] == i:
+      continue
+    cycle_size = 0
+    j = i
+
+    while not vis[j]:
+      vis[j]=True
+      j = arr[j][0]
+      cycle_size=cycle_size+1
+
+
+    if cycle_size > 0:
+      ans = ans+(cycle_size-1)
+
+  return ans
